@@ -8,21 +8,32 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>GENERATE QR CODE</h1>
+    <div class="box">
+        <div class="qr-header">
+            <h1>Generate QR Code</h1>
+            <input type="text" placeholder="Type Your Text Or URL">
 
-        <div class="input">
-            <input type="text" name="" id="">
+            <div>
+                <label for="sizes">Select Sizes:</label>
+                <select  id="sizes">
+                    <option value="100">100*100</option>
+                    <option value="200">200*200</option>
+                    <option value="300">300*300</option>
+                    <option value="400">400*400</option>
+                    <option value="500">500*500</option>
+                    <option value="600">600*600</option>
+                    <option value="700">700*700</option>
+                    <option value="800">800*800</option>
+                    <option value="900">900*900</option>
+                    <option value="1000">1000*1000</option>
+                </select>
+            </div>
+           
         </div>
-
-        <div class="size">
-            <h5>Size:</h5>
-            <input type="text" name="" id="">
-        </div>
-
-        <div class="buttons">
-            <button>Generate</button>
-            <button>Download</button>
+        <div class="qrbody"></div>
+        <div class="qrfooter">
+            <a href="">Generate</a>
+            <a href="">Download</a>
         </div>
     </div>
     
