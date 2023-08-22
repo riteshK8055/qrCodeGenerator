@@ -74,7 +74,6 @@ body{
 
 .qrfooter{
 
-    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -88,6 +87,24 @@ body{
     margin-inline: 2px;
     color: var(--primary-color);
     font-weight: 600;
+    border-radius: var(--border-radius);
+}
+
+.qrbody{
+
+    display: grid;
+    place-items:center;
+    padding: 20px;
+
+}
+
+.qrbody img{
+
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 20px;
+    border: 0.5px solid var(--border-color);
     border-radius: var(--border-radius);
 }
 
