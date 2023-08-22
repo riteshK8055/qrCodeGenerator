@@ -19,18 +19,23 @@ sizes.addEventListener('change', (e)=>{
     isEmptyInput();
 })
 
-function isEmptyInput(){
+downloadBtn.addEventListener('click',()=>{
 
-    if(qrText.value.length>0){
-
-        generateQRCode();
-
+    let img = document.querySelector('.qrbody img');
+    if (img!== null){
+        let imgAtrr = img.getAttribute('src');
+        downloadBtn.setAttribute("href" , imgAtrr);
     }
 
     else{
 
-        alert("enter the text or url to generate your qr code");
+        downloadBtn.setAttribute("href" , `${document.querySelector('canvas').toDataURL()}`)
     }
+})
+
+function isEmptyInput(){
+
+    qrText.value.length>0?generateQRCode():alert("enter the text or url to generate your qr code");
 }
 
 function generateQRCode(){
