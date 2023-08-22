@@ -1,0 +1,1 @@
+this is a qr code generator website which is made by using html css javascript and this is for the purpose of practicing and understanding the concept of javascript .
